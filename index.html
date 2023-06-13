@@ -1,278 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My Portfolio website" />
-    <meta name="keywords" Content="web design, html, css, js" />
-    <title>Portfolio Website</title>
-  </head>
-  <body>
-    <heaader class="header container">
-      <nav>
-        <ul class="header__menu">
-          <li>
-            <a class="header__link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="header__link" href="#featured">Work</a>
-          </li>
-          <li>
-            <a class="header__link" href="#projects">Projects</a>
-          </li>
-          <li>
-            <a class="header__link" href="#contact">Contact</a>
-          </li>
-          <li class="header__line"></li>
-          <li>
-            <button aria-label="theme-toggle btn" id="theme-toggle" class="header__sun">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
-              </svg>
-              
-            </button>
-          </li>
-          <li>
-            <a class="header__resume btn " href="/Arpit_Bhati_Resume.pdf" target="_blank">Resume</a>
-          </li>
-        </ul>
-        <button aria-label="mobile nav button" class="header__bars">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
-          </svg>
-          
-        </button>
-      </nav>
-    </heaader>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-      <nav>
-        <ul class="mobile-nav__menu">
-          <li>
-            <a class="mobile-nav__link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#featured">Work</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#projects">Projects</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#contact">Contact</a>
-          </li>
-          <li class="mobile-nav__link-line"></li>
-          <li>
-            <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
-              </svg>
-              
-            </button>
-          </li>
-          <li>
-            <a class="mobile-nav__btn btn" href="/Arpit_Bhati_Resume.pdf" target="_blank">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- END of Mobile Navigation -->
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="My Portfolio website" />
+  <meta name="keywords" Content="web design, html, css, js" />
+  <title>Portfolio Website</title>
+</head>
 
-    <main>
-      <section class="hero container">
-        <img class="hero__img" src="/hero.jpeg" alt="Profile picture" />
-        <h2 class="hero__subtitle"> Hi, I'm Arpit Bhati 👋</h2>
-        <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER.</h1>
-        <p class="hero__description">
-          A passionate <strong> Frontend / Fullstack </strong> web developer. Sound knowledge of developing <strong>web portals</strong> and <strong> e-commerce </strong> applications.
-        </p>
-        <a class="hero_btn btn" href="https://www.linkedin.com/in/arpit-bhati-249139138/" target="_blank">LinkedIn Profile</a>
-      </section>
-
-      <section id="about" class="about container section">
-        <div class="about__content">
-          <h2 class="about__title">About</h2>
-          <p class="about__description">Hello there! I'm Arpit Bhati, a <strong> Frontend / Fullstack </strong> web developer based in Delhi. As a web developer, my objective is to create user-friendly and efficient websites that are visually appealing and easy to navigate.</p>
-          <p class="about__description">I utilize my skills in HTML, CSS, JavaScript, and Angular to develop websites that meet all the requirements of the client.</p>
-          <p class="about__description">Sound knowledge of developing <a>web portals</a> and <a>e-commerce</a> applications. So if you're looking for a talented web developer, this is the perfect place to start your search!</p>
-          <hr class="about__hr" />
-          <h3 class="about__subtitle">Technologies</h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">Javascript</li>
-              <li class="about__list">CSS</li>
-              <li class="about__list">HTML</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">Angular</li>
-              <li class="about__list">BootStrap</li>
-              <li class="about__list">JSON</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">SQL</li>
-              <li class="about__list">GIT</li>
-              <li class="about__list">REST APIs</li>
-            </ul>
-          </div>
-        </div>
-        <div class="about__img-wrapper">
-          <img class="about__img lazy loading loaded" 
-          src="https://placehold.co/1203x1600"
-          data-src="/profile.jpeg" alt="Profile picture" />
-        </div>
-      </section>
-
-      <section id="featured" class="featured container section">
-        <h3 class="featured__subtitle">hackathon Project</h3>
-        <div class="featured__wrapper">
-          <h2 class="featured__title">Common <a>CSR</a> Portal</h2>
-          <a aria-label="link featured projects" class="featured__link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"     fill="currentColor">
-              <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"     clip-rule="evenodd" />
+<body>
+  <heaader class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="header__link" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
             </svg>
-          </a>
+
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn " href="/Arpit_Bhati_Resume.pdf" target="_blank">Resume</a>
+        </li>
+      </ul>
+      <button aria-label="mobile nav button" class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+
+      </button>
+    </nav>
+  </heaader>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="/Arpit_Bhati_Resume.pdf" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- END of Mobile Navigation -->
+
+  <main>
+    <section class="hero container">
+      <img class="hero__img" src="/hero.jpeg" alt="Profile picture" />
+      <h2 class="hero__subtitle"> Hi, I'm Arpit Bhati 👋</h2>
+      <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER.</h1>
+      <p class="hero__description">
+        A passionate <strong> Frontend / Fullstack </strong> web developer. Sound knowledge of developing <strong>web
+          portals</strong> and <strong> e-commerce </strong> applications.
+      </p>
+      <a class="hero_btn btn" href="https://www.linkedin.com/in/arpit-bhati-249139138/" target="_blank">LinkedIn
+        Profile</a>
+    </section>
+
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">Hello there! I'm Arpit Bhati, a <strong> Frontend / Fullstack </strong> web
+          developer based in Delhi. As a web developer, my objective is to create user-friendly and efficient websites
+          that are visually appealing and easy to navigate.</p>
+        <p class="about__description">I utilize my skills in HTML, CSS, JavaScript, and Angular to develop websites that
+          meet all the requirements of the client.</p>
+        <p class="about__description">Sound knowledge of developing <a>web portals</a> and <a>e-commerce</a>
+          applications. So if you're looking for a talented web developer, this is the perfect place to start your
+          search!</p>
+        <hr class="about__hr" />
+        <h3 class="about__subtitle">Technologies</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">Javascript</li>
+            <li class="about__list">CSS</li>
+            <li class="about__list">HTML</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">Angular</li>
+            <li class="about__list">BootStrap</li>
+            <li class="about__list">JSON</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">SQL</li>
+            <li class="about__list">GIT</li>
+            <li class="about__list">REST APIs</li>
+          </ul>
         </div>
-          <p class="featured__description">There are many CSR Portals which are available but the common CSR Portal clubs all the portals together so that the user can find everything at one place. This will allow for a large range of benefits.
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading loaded" src="https://placehold.co/1203x1600" data-src="/profile.jpeg"
+          alt="Profile picture" />
+      </div>
+    </section>
+
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">hackathon Project</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">Common <a>CSR</a> Portal</h2>
+        <a aria-label="link featured projects" class="featured__link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description">There are many CSR Portals which are available but the common CSR Portal clubs
+        all the portals together so that the user can find everything at one place. This will allow for a large range of
+        benefits.
+      </p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tech Stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">Angular</li>
+            <li class="featured__info">HTML5</li>
+            <li class="featured__info">CSS3</li>
+            <li class="featured__info">BootStrap</li>
+            <li class="featured__info">NodeJS</li>
+            <li class="featured__info">MySql</li>
+            <li class="featured__info">JSON</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">Project type</h3>
+          <p class="featured__info">Fullstack</p>
+        </div>
+        <div>
+          <h3 class="featured__label">Timeline</h3>
+          <p class="featured__info">Jan 2019 - Jul 2019</p>
+        </div>
+      </div>
+      <div class="featured__img-conatiner">
+        <div class="featured__img-wrapper">
+          <img class="lazy loading " src="https://placehold.co/756x391" data-src="/1.png" alt="Common csr home page" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://placehold.co/756x391" data-src="/2.png"
+            alt="Common csr types of user" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading " src="https://placehold.co/756x391" data-src="/3.png"
+            alt="Common csr project category" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading " src="https://placehold.co/756x391" data-src="/4.png" alt="Common csr about us" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://placehold.co/756x391" data-src="/5.png" alt="Common csr about us" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://placehold.co/756x391" data-src="/6.png"
+            alt="Common csr project page" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://placehold.co/756x391" data-src="/7.png"
+            alt="Common csr contact us page" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://placehold.co/756x391" data-src="/8.png"
+            alt="Common csr registeration page" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="work container section">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__description">Here you can find a collection of projects that showcase my skills and experience in
+        building innovative websites and applications. From custom-built themes to complex web applications, this
+        portfolio has it all.</p>
+      <div class="work__conatainer">
+        <!-- project 1 -->
+        <h3 class="work__project-title">Viraj Enterprises</h3>
+        <div class="work__img-wrapper work__image1">
+          <img class="lazy loading" src="https://placehold.co/900" data-src="/viraj-enterprise.png"
+            alt="Viraj Enterprises website" />
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__project-subtitle">Viraj Enterprises</h3>
+          <p class="work__project-description1"><a>Tech Stack:</a> <strong> HTML, Bootstrap, CSS and
+              JavaScript.</strong></p>
+          <p class="work__project-description2">A Viraj enterprises is an online website for sanitary hardware display.
+            Users can search hardware by brands or model name. PayPal Payment gateway was used to collect the order
+            payments.(Not implemented, as client doesn’t wanted online sale).</p>
+          <a class="btn work__project-btn" href="https://viraj-enterprise.vercel.app/" target="_blank">website</a>
+        </div>
+
+        <!-- project 2 -->
+        <h3 class="work__project-title">Food Order App</h3>
+        <div class="work__img-wrapper work__image2">
+          <img class="lazy loading" src="https://placehold.co/900" data-src="/foodkart.png"
+            alt="Food Order App website" />
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project-subtitle">Food Order App</h3>
+          <p class="work__project-description1"><a>Tech Stack:</a> <strong>Angular, HTML, Bootstrap, CSS and
+              JavaScript.</strong> </p>
+          <p class="work__project-description2">A Food Kart is an online website for food order app. Users can search
+            food items by name or types. After selecting the order user can move it to food cart where he can add or
+            remove the food items.</p>
+          <a class="btn work__project-btn" href="https://food-order-app-indol.vercel.app/" target="_blank">website</a>
+        </div>
+
+        <!-- project 3 -->
+        <h3 class="work__project-title">Weather App</h3>
+        <div class="work__img-wrapper work__image3">
+          <img class="lazy loading" src="https://placehold.co/900" data-src="/WeatherApp.png" alt="wax motif website" />
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__project-subtitle">Weather App</h3>
+          <p class="work__project-description1"><a>Tech Stack:</a> <strong>HTML, Bootstrap, CSS and JavaScript.</strong>
           </p>
-        <div class="featured__info-container">
-          <div>
-            <h3 class="featured__label">Tech Stack</h3>
-            <ul class="featured__tech-stack">
-              <li class="featured__info">Angular</li>
-              <li class="featured__info">HTML5</li>
-              <li class="featured__info">CSS3</li>
-              <li class="featured__info">BootStrap</li>
-              <li class="featured__info">NodeJS</li>
-              <li class="featured__info">MySql</li>
-              <li class="featured__info">JSON</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="featured__label">Project type</h3>
-            <p class="featured__info">Fullstack</p>
-          </div>
-          <div>
-            <h3 class="featured__label">Timeline</h3>
-            <p class="featured__info">Jan 2019 - Jul 2019</p>
-          </div>
+          <p class="work__project-description2">In this project, I learned how to use APIs, various libraries, and other
+            tools to create an effective weather app that can be used by both professionals and everyday people.</p>
+          <a class="btn work__project-btn" href="https://weather-five-rouge.vercel.app/" target="_blank">website</a>
         </div>
-        <div class="featured__img-conatiner">
-          <div class="featured__img-wrapper">
-            <img class="lazy loading " 
-            src="https://placehold.co/756x391"
-            data-src="/1.png" alt="Common csr home page" />
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" 
-            src="https://placehold.co/756x391"
-            data-src="/2.png" alt="Common csr types of user" />
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading " 
-            src="https://placehold.co/756x391"
-            data-src="/3.png" alt="Common csr project category" />
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading " 
-            src="https://placehold.co/756x391"
-            data-src="/4.png" alt="Common csr about us" />
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" 
-            src="https://placehold.co/756x391"
-            data-src="/5.png" alt="Common csr about us" />
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" 
-            src="https://placehold.co/756x391"
-            data-src="/6.png" alt="Common csr project page" />
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" 
-            src="https://placehold.co/756x391" 
-            data-src="/7.png" alt="Common csr contact us page" />
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" 
-            src="https://placehold.co/756x391"
-            data-src="/8.png" alt="Common csr registeration page" />
-          </div>
-        </div>
-      </section>
 
-      <section id="projects" class="work container section">
-        <h2 class="work__title">Projects</h2>
-        <p class="work__description">Here you can find a collection of projects that showcase my skills and experience in building innovative websites and applications. From custom-built themes to complex web applications, this portfolio has it all.</p>
-        <div class="work__conatainer">
-          <!-- project 1 -->
-          <h3 class="work__project-title">Viraj Enterprises</h3>
-          <div class="work__img-wrapper work__image1">
-            <img class="lazy loading" 
-            src="https://placehold.co/900" 
-            data-src="/viraj-enterprise.png" alt="Viraj Enterprises website" />
-          </div>
-          <div class="work__project work__content1">
-            <h3 class="work__project-subtitle">Viraj Enterprises</h3>
-            <p class="work__project-description1">Tech Stack: HTML, Bootstrap, CSS and JavaScript.</p>
-            <p class="work__project-description2">A Viraj enterprises is an online website for sanitary hardware display. Users can search hardware by brands or model name. PayPal Payment gateway was used to collect the order payments.(Not implemented, as client doesn’t wanted online sale).</p>
-            <a class="btn work__project-btn" href="https://viraj-enterprise.vercel.app/" target="_blank">website</a>
-          </div>
-  
-          <!-- project 2 -->
-          <h3 class="work__project-title">Food Order App</h3>
-          <div class="work__img-wrapper work__image2">
-            <img class="lazy loading" 
-            src="https://placehold.co/900"
-            data-src="/foodkart.png" alt="Food Order App website" />
-          </div>
-          <div class="work__project work__content2">
-            <h3 class="work__project-subtitle">Food Order App</h3>
-            <p class="work__project-description1">Tech Stack: Angular, HTML, Bootstrap, CSS and JavaScript.</p>
-            <p class="work__project-description2">A Food Kart is an online website for food order app. Users can search food items by name or types. After selecting the order user can move it to food cart where he can add or remove the food items.</p>
-            <a class="btn work__project-btn" href="https://food-order-app-indol.vercel.app/" target="_blank">website</a>
-          </div>
-          
-          <!-- project 3 -->
-          <h3 class="work__project-title">Weather App</h3>
-          <div class="work__img-wrapper work__image3">
-            <img class="lazy loading" 
-            src="https://placehold.co/900" 
-            data-src="/WeatherApp.png" alt="wax motif website" />
-          </div>
-          <div class="work__project work__content3">
-            <h3 class="work__project-subtitle">Weather App</h3>
-            <p class="work__project-description1">Tech Stack: HTML, Bootstrap, CSS and JavaScript.</p>
-            <p class="work__project-description2">In this project, I learned how to use APIs, various libraries, and other tools to create an effective weather app that can be used by both professionals and everyday people.</p>
-            <a class="btn work__project-btn" href="https://weather-five-rouge.vercel.app/" target="_blank">website</a>
-          </div>
-  
-          <!-- project 4 -->
-          <h3 class="work__project-title">Portal</h3>
-          <div class="work__img-wrapper work__image4">
-            <img class="lazy loading" 
-            src="https://placehold.co/900"
-            data-src="/waxmoney.png" alt="wax motif website" />
-          </div>
-          <div class="work__project work__content4">
-            <h3 class="work__project-subtitle">Portal</h3>
-            <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim pariatur deserunt do ad exercitation.</p>
-            <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum commodo. Do esse excepteur cillum deserunt duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing cupidatat sint.</p>
-            <a class="btn work__project-btn">website</a>
-          </div>
+        <!-- project 4 -->
+        <h3 class="work__project-title">Expense App</h3>
+        <div class="work__img-wrapper work__image4">
+          <img class="lazy loading" src="https://placehold.co/900" data-src="/expense.png" alt="wax motif website" />
         </div>
-      </section>
+        <div class="work__project work__content4">
+          <h3 class="work__project-subtitle">Expense App</h3>
+          <p class="work__project-description1"><a>Tech Stack:</a> <strong>HTML, Bootstrap, CSS and JavaScript.</strong>
+          </p>
+          <p class="work__project-description2">Expense app is a JavaScript project that helps users track their
+            expenses and manage their budget. This project provides an easy-to-use interface that allows users to record
+            their expenses and view detailed reports of their spending.</p>
+          <a class="btn work__project-btn" href="https://expense-app-tau.vercel.app/" target="_blank">website</a>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact" class="contact container section">
-        <h2 class="contact__title">Get In Contact</h2>
-        <p class="contact__description">Whether you are starting a project, have business inquiries or just want to say hi, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.</p>
-        <a class="contact__btn btn" href="mailto:arpitbhati94@gmail.com" target="_blank">Reach Out</a>
-      </section>
-    </main>
-    <footer class="footer container section">
-      <h3 class="footer__title">~ Arpit Bhati ~</h3>
-    </footer>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+    <section id="contact" class="contact container section">
+      <h2 class="contact__title">Get In Contact</h2>
+      <p class="contact__description">Whether you are starting a project, have business inquiries or just want to say
+        hi, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.</p>
+      <a class="contact__btn btn" href="mailto:arpitbhati94@gmail.com" target="_blank">Reach Out</a>
+    </section>
+  </main>
+  <footer class="footer container section">
+    <h3 class="footer__title">~ Arpit Bhati ~</h3>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
 </html>
